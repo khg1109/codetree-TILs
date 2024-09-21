@@ -1,18 +1,22 @@
-n = list(map(int, input().split()))
+# 변수 선언 및 입력
+inp = input()
+arr = inp.split()
+a = int(arr[0])
+b = int(arr[1])
+c = int(arr[2])
 
-
-
-if n[0] >= n[1]:
-
-    if n[0] >= n[2]:
-        print(n[2])
+# 출력
+if a > b:
+    if c > a:
+        print(a)
+    elif b > c:
+        print(b)
     else:
-        print(n[0])
-
-
+        print(c)
 else:
-
-    if n[1] >= n[2]:
-        print(n[2])
+    if c > b:
+        print(b)
+    elif a > c:
+        print(a)
     else:
-        print(n[1])
+        print(c)
