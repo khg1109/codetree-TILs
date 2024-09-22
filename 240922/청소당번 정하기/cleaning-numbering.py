@@ -8,8 +8,10 @@ n = int(input())
 
 
 
-for i in range(1,n):
+for i in range(n):
 
+    if i == 0:
+        continue
     if i % 12 == 0:
         bathroom += 1
     elif i % 3 == 0:
