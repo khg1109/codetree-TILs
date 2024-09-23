@@ -8,7 +8,7 @@ while True:
     elif n == 2:
         print("Tom")
     elif n == 3:
-        print("paul")
+        print("Paul")
     elif n == 4:
         print("Sam")
     else:
