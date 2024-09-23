@@ -4,13 +4,13 @@ n = int(input())
 
 
 
-for i in range(2, n+1):
+for i in range(2, n):
 
     if n % i == 0:
         satisfied = True
 
 if satisfied:
-    print("P")
+    print("C")
 
 else:
-    print("C")
+    print("P")
