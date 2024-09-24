@@ -9,6 +9,6 @@ for i in range(n):
         cnt += 2
         print(cnt, end = " ")
     
-        if cnt == 10:
+        if cnt == 8:
             cnt = 0
     print()
