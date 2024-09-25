@@ -6,7 +6,7 @@ for i in range(1, 10):
 
         if j % 2 == 0:
             
-            if j == 2:
+            if j == n[0]:
                 print("%d * %d = %d" % (j,i,j*i), end = " ")
             else:
                 print("%d * %d = %d /" % (j,i,j*i), end = " ")
