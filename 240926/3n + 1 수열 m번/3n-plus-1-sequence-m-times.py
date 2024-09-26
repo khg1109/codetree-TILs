@@ -1,5 +1,5 @@
 m = int(input())
-cnt = 1
+cnt = 0
 
 for i in range(m):
 
@@ -7,14 +7,14 @@ for i in range(m):
 
 
     while True:
+        if n == 1:
+            break
         if n % 2 == 0:
             n //= 2
         else:
             n *= 3
             n += 1
-
-        if n == 1:
-            break
         cnt += 1
 
     print(cnt)
+    cnt = 0
