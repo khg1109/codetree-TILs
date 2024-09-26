@@ -8,10 +8,10 @@ for i in range(n[0], n[1]+1):
 
         if i % j == 0:
             cnt += 1
+            
 
-        if cnt == 3:
-            cnt3 += 1
-        
-
+    if cnt == 3:
+         cnt3 += 1
+    cnt = 0
 
 print(cnt3)
