@@ -7,7 +7,7 @@ for i in range(10):
 
     if n[i] % 3 == 0:
         break
-    cnt
+    cnt += 1
 
 
 print(n[cnt-1])
