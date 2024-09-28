@@ -17,17 +17,20 @@ int main() {
             break;
         }
 
-        n /= 10;
-        arr[cnt] = n;
+  
+        arr[cnt] = n / 10;
         cnt++;
     }
 
 
-
     for(int i = 0; i < cnt; i++){
-        cntArr[arr]++;
-        printf("%d ", cntArr[i]);
-         
+        cntArr[arr[i]]++;
+    }
+
+
+    for(int i = 1; i < 10; i++){
+        printf("%d - %d \n",i ,cntArr[i]);
+
     }
 
 
