@@ -32,7 +32,7 @@ int main() {
                 cnta++;
                 cntb++;
             }
-            break;
+            cntb = 0;
         }
 
     }
