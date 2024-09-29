@@ -11,17 +11,19 @@ int main() {
     int cntArr[100] = {0};
 
     while(a > 1){
-        cntArr[a % b]++;
-        a /= b;
         cnt++;
-
+        a /= b;
+        cntArr[a % b]++;
+        
     }
     int sum = 0;
     int sum2 = 0;
 
     for(int i = 0; i < cnt; i++){
-        sum = cntArr[i] * cntArr[i];
-        sum2 += sum;
+      sum = cntArr[i] * cntArr[i];
+      sum2 += sum;
+
+
 
     }
 
