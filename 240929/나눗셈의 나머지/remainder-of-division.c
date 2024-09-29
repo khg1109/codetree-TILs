@@ -20,14 +20,11 @@ int main() {
     int sum2 = 0;
 
     for(int i = 0; i < cnt; i++){
-      sum = cntArr[i] * cntArr[i];
-      sum2 += sum;
-
-
+      sum += cntArr[i] * cntArr[i];
 
     }
 
-    printf("%d", sum2);
+    printf("%d", sum);
 
     // 여기에 코드를 작성해주세요.
     return 0;
