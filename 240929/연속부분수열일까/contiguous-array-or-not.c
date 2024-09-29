@@ -45,7 +45,7 @@ int main() {
     }
 
 
-    if(inspection){
+    if(cntb == n2){
         printf("Yes");
     }
     else{
