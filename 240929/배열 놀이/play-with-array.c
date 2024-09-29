@@ -39,7 +39,10 @@ int main() {
             if(inspection){
                 printf("%d\n", 0);
             }
+            inspection = true;
+            
         }
+
 
         else if(num == 3){
             scanf("%d %d", &question[0], &question[1]);
@@ -49,6 +52,7 @@ int main() {
             }
             printf("\n");
         }
+        
     }
 
 
