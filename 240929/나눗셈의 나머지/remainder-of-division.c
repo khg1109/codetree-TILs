@@ -11,15 +11,13 @@ int main() {
     int cntArr[100] = {0};
 
     while(a > 1){
-        cnt++;
-        a /= b;
         cntArr[a % b]++;
-        
+        a /= b;
     }
     int sum = 0;
 
 
-    for(int i = 0; i < cnt; i++){
+    for(int i = 0; i < b; i++){
       sum += cntArr[i] * cntArr[i];
     }
 
