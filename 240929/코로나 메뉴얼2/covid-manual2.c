@@ -2,15 +2,17 @@
 
 int main() {
 
-    int cntArr[4];
+    int cntArr[4] = {0};
 
     for(int i = 0; i < 3; i++){
         char coldSymptoms;
         int tp;
-        scanf("%c %d", &coldSymptoms), &tp;
+        scanf(" %c %d", &coldSymptoms, &tp);
 
 
-        if(coldSymptoms == 'Y'){            
+
+        
+        if(coldSymptoms == 'Y'){
             if(tp >= 37){
                 cntArr[0]++;
             }
@@ -23,16 +25,22 @@ int main() {
                 cntArr[1]++;
             }
             else{
-                cntArr[4]++;
+                cntArr[3]++;
+
             }
         }
     }
 
 
-
     for(int i = 0; i < 4; i++){
         printf("%d ", cntArr[i]);
+
     }
+    if(cntArr[0] >= 2){
+        printf("E");
+
+    }
+
 
 
 
