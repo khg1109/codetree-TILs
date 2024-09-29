@@ -19,7 +19,7 @@ int main() {
     int sum = 0;
     int sum2 = 0;
 
-    for(int i = 0; i < cnt-1; i++){
+    for(int i = 0; i < cnt; i++){
         sum = cntArr[i] * cntArr[i];
         sum2 += sum;
 
