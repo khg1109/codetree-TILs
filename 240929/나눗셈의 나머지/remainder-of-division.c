@@ -1,26 +1,31 @@
 #include <stdio.h>
 
 int main() {
-    int a, b;
 
-   
+    int a;
+    int b;
+
     scanf("%d %d", &a, &b);
 
-    int cntArr[100] = {0}; 
-    int sumOfSquares = 0;
+    int cnt = 0;
+    int cntArr[100] = {0};
 
-
-    while (a > 1) {
-         
-        cntArr[a%b]++; 
-        a /= b; 
+    while(a > 1){
+        cnt++;
+        a /= b;
+        cntArr[a % b]++;
+        
     }
-   
-    for (int i = 0; i < b; i++) {
-        sumOfSquares += cntArr[i] * cntArr[i];
+    int sum = 0;
+
+
+    for(int i = 0; i < cnt; i++){
+      sum += cntArr[i] * cntArr[i];
     }
 
-    printf("%d\n", sumOfSquares);
+    printf("%d ", sum);
 
+
+    // 여기에 코드를 작성해주세요.
     return 0;
 }
