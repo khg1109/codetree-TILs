@@ -46,10 +46,8 @@ int main() {
 
             for(int i = question[0]; i <= question[1]; i++){
                 printf("%d ", arr[i-1]);
-
             }
-
-
+            printf("\n");
         }
     }
 
