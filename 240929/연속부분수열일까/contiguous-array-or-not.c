@@ -36,7 +36,7 @@ int main() {
         }
 
     }
-    if(cntb = n2){
+    if(cntb == n2){
         printf("Yes");
     }
     else{
