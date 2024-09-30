@@ -17,21 +17,24 @@ int main() {
     int max = arr[0];
     int a = 0;
 
-    while(inspection){
-        inspection = false;
-        for(int i = 0; i < n -a; i++){
-            if(max < arr[i]){
-                max = arr[i];
-                maxDex = i;
-                inspection = true;
+    while(1){
+        
+        int max_idx = 0;
+
+        for(int i = 1; i < n; i++){
+            if(arr[i] > arr[max_idx]){
+                max_idx = i;
             }
-            
-            //printf("인덱스: %d %d %d\n", i,max,maxDex);
         }
-        max = arr[0];
-        a = n - maxDex;
-        printf("%d ", maxDex+1);
-        maxDex = 0;
+
+        printf("%d ", max_idx + 1);
+
+        if(max_idx == 0){
+            break;
+        }
+
+        n = max_idx;
+
         
     }
     return 0;
