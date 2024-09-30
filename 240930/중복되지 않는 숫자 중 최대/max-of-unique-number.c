@@ -1,45 +1,41 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#define MAX_N 1000
+#define MAX_NUM 1000
+
 int main() {
 
-    int arr[100];
-
     int n;
+    int nums[MAX_N];
+
+    int count[MAX_NUM + 1] = {0};
 
     scanf("%d", &n);
-
     for(int i = 0; i < n; i++){
-        scanf("%d", &arr[i]);
+        scanf("%d", &nums[i]);
     }
 
 
-    for(int i = 0; i < n-1; i++){
-        for(int j = 0; j < n-1-i; j++){
+    for(int i = 0; i < n; i++){
+        count[nums[i]]++;
+    }
 
-            if(arr[j] < arr[j+1]){
-                int temp = arr[j];
-                arr[j] = arr[j+1];
-                arr[j+1] = temp;
-            }
+
+
+    int answer = -1;
+
+    for(int i = MAX_NUM; i >= 0; i--){
+        if(count[i] == 1){
+            answer = i;
+            break;
         }
     }
 
-    bool inspection = true;
-    
-    for(int i = 1; i < n; i++){
-        if(arr[i] == arr[0]){
-            inspection = false;
-        } 
-    }
 
 
-    if(inspection){
-        printf("%d", arr[0]);
-    }
-    else{
-        printf("%d", -1);
-    }
+    printf("%d", answer);
+
     // 여기에 코드를 작성해주세요.
     return 0;
 }
