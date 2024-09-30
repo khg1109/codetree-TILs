@@ -20,7 +20,7 @@ int main() {
         
         int max_idx = 0;
 
-        for(int i = 1; i < prev_max_idx; i++){
+        for(int i = 1; i < n; i++){
             if(arr[i] > arr[max_idx]){
                 max_idx = i;
             }
@@ -32,7 +32,7 @@ int main() {
             break;
         }
 
-        prev_max_idx = max_idx;
+        n = max_idx;
 
         
     }
