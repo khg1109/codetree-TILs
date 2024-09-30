@@ -13,9 +13,6 @@ int main() {
         scanf("%d", &arr[i]);
     }
 
-
-    int prev_max_idx = n;
-
     while(1){
         
         int max_idx = 0;
