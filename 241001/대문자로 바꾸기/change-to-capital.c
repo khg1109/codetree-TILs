@@ -17,7 +17,7 @@ int main() {
     for(int i = 0; i < 5; i++){
         for(int j = 0; j < 3; j++){
 
-            arr[i][j] += 'A' - 'a';
+            arr[i][j] += 'B' - 'b';
 
             printf("%c ", arr[i][j]);
         }
