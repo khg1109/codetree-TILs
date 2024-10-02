@@ -17,8 +17,8 @@ int main() {
             }
         }
         else{
-            for(int j = 0; j < n; j++){
-                arr[j][i] = cnt;
+            for(int k = 0; k < n; k++){
+                arr[k][i] = cnt;
                 cnt++;
             }
         }
