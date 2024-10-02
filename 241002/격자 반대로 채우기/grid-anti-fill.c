@@ -7,10 +7,11 @@ int main() {
     scanf("%d", &n);
 
     int arr[10][10] = {0};
-    
+    int num = 0;
+
     int cnt = 1;
     for(int i = n-1; i >= 0; i--){
-        if(i % 2 == 1){
+        if(num % 2 == 0){
             for(int j = n-1; j >= 0; j--){
                 arr[j][i] = cnt;
                 cnt++;
@@ -22,6 +23,8 @@ int main() {
                 cnt++;
             }
         }
+        num++;
+        
     }
     
     for(int i = 0; i < n; i++){
