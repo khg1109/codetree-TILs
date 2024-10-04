@@ -16,7 +16,7 @@ int main() {
         }
     }    
 
-    for(int i = 0; i < strlen(str1); i++){
+    for(int i = 0; i < strlen(str2); i++){
         if(str2[i] != ' ' && str2[i] != '\n'){
             printf("%c", str2[i]);
         }
