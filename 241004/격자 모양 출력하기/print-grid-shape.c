@@ -6,7 +6,7 @@ int main() {
 
     scanf("%d %d", &n, &m);
 
-    arr[10][10];
+    int arr[10][10] = {0};
 
     for(int i = 0; i < m; i++){
         int c,r;
@@ -17,11 +17,11 @@ int main() {
     }
 
     for(int i = 0; i < n; i++){
-        for(int j = 0; j < n: j++){
-            printf("%d", arr[i][j]);
+        for(int j = 0; j < n; j++){
+            printf("%d ", arr[i][j]);
         }
         printf("\n");
-        
+
     }
 
 
