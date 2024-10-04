@@ -16,17 +16,16 @@ int main() {
     arr[2] = strlen(str3);
 
 
-
-    for(int i = 0; i < 3 - 1; i++){
-        for(int j = 0; j < 3 - 1 - i; j++){
-            if (arr[j] > arr[j + 1]){
+    for(int i = 0; i < 3-1 ; i++){
+        for(int j = 0; j < 3-1-i; j++){
+            if(arr[j] > arr[j+1]){
                 int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+                arr[j] = arr[j+1];
+                arr[j+1] = temp;
+
             }
         }
     }
-
     printf("%d", arr[2]- arr[0]);
 
 
