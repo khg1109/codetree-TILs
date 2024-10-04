@@ -12,7 +12,7 @@ int main() {
     int arr[10][10] = {0};
 
 
-    for(int i = 0; i < 3; i++){
+    for(int i = 0; i < m; i++){
         int a,b;
 
         scanf("%d %d", &a, &b);
