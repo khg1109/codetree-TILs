@@ -6,8 +6,8 @@ int main() {
 
     scanf("%s", &str);
 
-    printf("%d\n", str);
-    printf("%d\n", str);
+    printf("%s\n", str);
+    printf("%s\n", str);
 
 
 
