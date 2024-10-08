@@ -12,7 +12,7 @@ int main() {
     char n;
 
     // 개행 문자 제거
-    getchar(); // 남아 있는 개행 문자 제거
+    getchar();
 
     // 문자 입력
     scanf("%c", &n);
