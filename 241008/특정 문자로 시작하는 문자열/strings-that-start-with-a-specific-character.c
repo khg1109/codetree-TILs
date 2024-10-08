@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
@@ -15,20 +16,23 @@ int main() {
 
     char A;
     
+    getchar();
+
     scanf("%c", &A);
+
     int cnt = 0;
 
+    char a[1000] = "";
 
     for(int i = 0; i < n; i++){
         if(str1[i][0] == A){
-            str2[i] = str1[i];
+            strcat(a, str1[i]); 
             cnt++;
         }
     }
 
-    for(int i = 0; i < cnt; i++){
-        printf("%s\n",str2[i]); 
-    }
+    printf("%d %d",cnt ,strlen(a)/cnt);
+
 
 
 
