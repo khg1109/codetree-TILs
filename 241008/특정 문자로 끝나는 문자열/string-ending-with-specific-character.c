@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char arr[10][21];
+    char arr[10][100];
 
     // 문자열 입력
     for (int i = 0; i < 10; i++) {
