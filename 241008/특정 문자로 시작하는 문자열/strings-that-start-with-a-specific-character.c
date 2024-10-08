@@ -31,7 +31,7 @@ int main() {
         }
     }
 
-    printf("%d %d",cnt ,strlen(a)/cnt);
+    printf("%d %.2f",cnt ,strlen(a)/(double)cnt);
 
 
 
