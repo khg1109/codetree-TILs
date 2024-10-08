@@ -18,7 +18,7 @@ int main() {
 
     for(int i = 0; i < n; i++){
         for(int j = 0; j < strlen(arr[i]); j++){
-            if(arr[i][j] == 'a'){
+            if((int)arr[i][j] == 97){
                 cnta++;
             }
             cnt++;
