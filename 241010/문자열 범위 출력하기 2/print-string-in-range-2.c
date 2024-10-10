@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 int main() {
 
@@ -11,7 +12,7 @@ int main() {
 
 
     for(int i = 0; i < n; i++){
-        printf("%c", str[n-i+2]);
+        printf("%c", str[strlen(str)-1-i]);
     }
 
     // 여기에 코드를 작성해주세요.
