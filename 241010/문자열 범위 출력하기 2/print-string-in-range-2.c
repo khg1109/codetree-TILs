@@ -11,7 +11,7 @@ int main() {
     scanf("%d", &n);
 
 
-    for(int i = 0; i < n; i++){
+    for(int i = 0; i != '\0'; i++){
         printf("%c", str[strlen(str)-1-i]);
     }
 
