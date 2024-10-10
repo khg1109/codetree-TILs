@@ -11,7 +11,12 @@ int main() {
     scanf("%d", &n);
 
 
-    for(int i = 0; i != '\0'; i++){
+    for(int i = 0; i < n; i++){
+
+        if(str[i] == '\0'){
+            break;
+            
+        }
         printf("%c", str[strlen(str)-1-i]);
     }
 
