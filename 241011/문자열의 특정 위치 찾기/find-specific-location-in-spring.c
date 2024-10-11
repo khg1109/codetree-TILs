@@ -6,16 +6,19 @@
 
 int main() {
 
-    char str[20];
+    char str[21];
     int cnt = -1;
-    char c[5];
+    char c;
 
     scanf("%s", &str);
-    scanf("%s", &c);
+    
+    getchar();
+    scanf("%c", &c);
+    
 
     
     for(int i = 0; i < strlen(str); i++){
-        if(str[i] == c[0]){
+        if(str[i] == c){
             cnt = i;
             break;
         }
