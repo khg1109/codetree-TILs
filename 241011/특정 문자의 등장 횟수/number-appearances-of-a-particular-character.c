@@ -19,7 +19,7 @@ int main() {
         if(str[i] == 'e' && str[i+1] == 'e'){
             eecnt++;
         }
-        else if(str[i] == 'e' && str[i+1] == 'b'){
+        if(str[i] == 'e' && str[i+1] == 'b'){
             ebcnt++;
         }    
     }
