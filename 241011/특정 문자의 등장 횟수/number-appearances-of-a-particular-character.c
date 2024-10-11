@@ -15,7 +15,7 @@ int main() {
     bool ebcnt = 0;
 
 
-    for(int i = 0; i < strlen(str)-1; i++){
+    for(int i = 0; i < strlen(str); i++){
         if(str[i] == 'e' && str[i+1] == 'e'){
             eecnt++;
         }
