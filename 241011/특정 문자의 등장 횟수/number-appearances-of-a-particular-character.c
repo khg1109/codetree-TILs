@@ -11,8 +11,8 @@ int main() {
     scanf("%s", &str);
 
     
-    bool eecnt = 0;
-    bool ebcnt = 0;
+    int eecnt = 0;
+    int  ebcnt = 0;
 
 
     for(int i = 0; i < strlen(str); i++){
