@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stirng.h>
+#include <string.h>
 
 
 
@@ -13,9 +13,8 @@ int main() {
     scanf("%s", str);
 
     str[1] = 'a';
-    str[-1] = 'a';
+    str[strlen(str)-2] = 'a';
 
-    printf("%d", strlen(str))
 
     printf("%s", str);
 
