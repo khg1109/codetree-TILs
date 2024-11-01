@@ -14,7 +14,7 @@ int main() {
 
         if((str[i] >= 65 && str[i] <= 90) || (str[i] >= 97 && str[i] <= 122)){
             if (str[i] >= 97 && str[i] <= 122) {
-                printf("%c", str[i] - 'A' + 'a'); 
+                printf("%c", str[i] - 'a' + 'A'); 
             } else {
                 printf("%c", str[i]);
             }
