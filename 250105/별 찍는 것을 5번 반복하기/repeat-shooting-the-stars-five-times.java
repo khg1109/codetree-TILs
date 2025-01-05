@@ -10,9 +10,7 @@ public class Main {
 
 
     public static void prints(){
-        for(int i = 0; i < 10; i++){
-            System.out.print("*");
-        }
-        System.out.println();
+        System.out.println("**********");
+        
     }
 }
