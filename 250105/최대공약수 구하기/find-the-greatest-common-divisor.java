@@ -22,7 +22,7 @@ public class Main {
             min = m;
         }
 
-        for(int i = min; i > 1; i--){
+        for(int i = min; i > 0; i--){
 
             if((n % i == 0) && (m % i == 0)){
                 System.out.println(i);
