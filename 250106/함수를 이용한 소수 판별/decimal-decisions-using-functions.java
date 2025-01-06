@@ -16,10 +16,8 @@ public class Main {
         int sum = 0;
 
         if(b == 1){
-            return 0;
-            
+            return 0;   
         }
-        
         for(int i = a; i <= b; i++){
           //  System.out.printf("%d \n", sum1(i));
 
