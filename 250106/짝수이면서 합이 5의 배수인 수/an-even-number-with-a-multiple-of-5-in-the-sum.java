@@ -22,7 +22,7 @@ public class Main {
 
         //System.out.printf("%d %d", a, b);
 
-        if((a+b) % 5 == 0){
+        if((a+b) % 5 == 0 && n % 2 == 0){
             System.out.println("Yes");
             return;
         }
