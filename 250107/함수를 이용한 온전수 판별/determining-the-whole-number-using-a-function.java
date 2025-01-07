@@ -18,7 +18,9 @@ public class Main {
     }
 
     static int function(int i){
-        if(!(i % 2 == 0) && !(i % 10 == 5) && !(i % 3 == 0 && !(i % 9 == 0))){
+        if(!(i % 2 == 0) && !(i % 10 == 5) && !(i % 3 == 0 && (i % 9 != 0))){
+            System.out.printf("%d ", i);
+
             return 1;
         }
         else{
