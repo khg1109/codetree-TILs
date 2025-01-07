@@ -9,7 +9,7 @@ public class Main {
         int b = sc.nextInt();
 
         int c = 0;
-        for(int i = a; i < b; i++){
+        for(int i = a; i <= b; i++){
             c += function(i);
         }
         System.out.printf("%d", c);
