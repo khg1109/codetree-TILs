@@ -5,23 +5,26 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        String a = sc.next();
+    
+        String inputString = sc.next();
 
-        String a2 = function(a);
+        String reversedString = reverseString(inputString);
 
-        // Please write your code here.
+
+        if (inputString.equals(reversedString)) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
     }
 
-    static String function(String a){
-        String str = "";
-        for(int i = 0; i < a.length(); i++){
-            str = a.charAt(i) + str;
-            
-        }   
-        System.out.printf("%s", str);
+    static String reverseString(String inputString) {
+        String reversed = "";
+        
+        for (int i = 0; i < inputString.length(); i++) {
+            reversed = inputString.charAt(i) + reversed;
+        }
 
-        return "";
+        return reversed;
     }
-
-
 }
