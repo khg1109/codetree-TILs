@@ -34,7 +34,7 @@ public class Main {
         }
         else{
             c.n *= 2;
-            d.n += 1;
+            d.n += 10;
         }
     }
 }
