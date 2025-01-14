@@ -18,11 +18,11 @@ public class Main {
     }
     public static int function(int a){
         
-        if(a == 0){
-            return a % 10;
-        }
+       if(a < 10){
+        return a;
 
-        return function(a /= 10) + a % 10;
+       }
+        return function(a / 10) + a % 10;
     }
     
 }
