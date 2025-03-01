@@ -14,11 +14,11 @@ class CodeName {
     
 }
 
-// Comparator를 구현한 클래스 (오름차순 정렬)
+
 class ScoreComparator implements Comparator<CodeName> {
     @Override
     public int compare(CodeName a, CodeName b) {
-        return a.score - b.score;  // 점수가 낮은 순으로 정렬
+        return a.score - b.score;  
     }
 }
 
